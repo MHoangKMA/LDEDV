@@ -19,6 +19,7 @@ int main()
 {
     int i=0, n, dem = 0;
     scanf("%d", &n);
+    if(n < 1 || n > 10e6) return 0;
     int a[n];
     for(i = 0;i < n; i++)
     {
