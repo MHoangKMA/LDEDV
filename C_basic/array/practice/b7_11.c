@@ -2,13 +2,12 @@
 
 int main()
 {
-
-    int i = 0, n, demChan = 0, demLe = 0;
+    int i = 0, n, dem = 0, x;
 
     do
     {
-        scanf("%d", &n);
         /* code */
+        scanf("%d", &n);
     } while (n < 1 || n > 10e6);
 
     int a[n];
@@ -18,19 +17,17 @@ int main()
         scanf("%d", &a[i]);
     }
 
+    scanf("%d", &x);
+
     for (i = 0; i < n; i++)
     {
-        if (a[i] % 2 == 0)
+        if (a[i] == x)
         {
-            demChan++;
-        }
-        else if (a[i] % 2 != 0)
-        {
-            demLe++;
+            dem++;
         }
     }
 
-    printf("%d \n%d", demChan, demLe);
+    printf("%d", dem);
 
     return 0;
 }

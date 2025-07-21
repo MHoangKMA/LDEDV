@@ -3,8 +3,8 @@
 int main()
 {
     int i = 0, n;
-    float sum =0.0;
-    
+    float sum = 0.0;
+
     do
     {
         scanf("%d", &n);
@@ -12,16 +12,16 @@ int main()
 
     int a[n];
 
-    for(i =0; i < n ;i ++)
+    for (i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
     }
 
-    for(i=0;i<n;i++)
+    for (i = 0; i < n; i++)
     {
-        sum+= a[i];
+        sum += a[i];
     }
     printf("%.2lf", sum / n);
-    
+
     return 0;
 }

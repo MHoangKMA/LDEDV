@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int isThuanNghich(int n)
 {
@@ -9,26 +9,26 @@ int isThuanNghich(int n)
     {
         int digit = n % 10;
         reversed = reversed * 10 + digit;
-        n = n/10;
+        n = n / 10;
     }
     return original == reversed;
 }
 
-
 int main()
 {
-    int i=0, n, dem = 0;
+    int i = 0, n, dem = 0;
     scanf("%d", &n);
-    if(n < 1 || n > 10e6) return 0;
+    if (n < 1 || n > 10e6)
+        return 0;
     int a[n];
-    for(i = 0;i < n; i++)
+    for (i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
     }
 
-    for(i=0;i < n;i++)
+    for (i = 0; i < n; i++)
     {
-        if(isThuanNghich(a[i]))
+        if (isThuanNghich(a[i]))
         {
             dem++;
         }
